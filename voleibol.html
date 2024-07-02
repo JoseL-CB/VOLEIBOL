@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escuela de Voleibol</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        /* Estilos adicionales personalizados */
+        .card {
+            background-color: #ffffff;
+            border-radius: 0.5rem;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .card img {
+            display: block;
+            width: 100%;
+            height: auto;
+            border-radius: 0.5rem 0.5rem 0 0;
+        }
+
+        .card-content {
+            padding: 1.5rem;
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+    <!-- Navbar -->
+    <nav class="bg-blue-600 text-white">
+        <div class="container mx-auto flex justify-between items-center">
+            <!-- Logo -->
+            <div class="flex items-center flex-shrink-0 text-white">
+                <img src="logo.png" alt="Logo Escuela Voleibol" class="h-20 w-20">
+                <span class="font-semibold text-xl tracking-tight">GALACTICOSVOLEY</span>
+            </div>
+
+            <!-- Enlaces del Navbar -->
+            <div class="hidden lg:flex lg:items-center lg:w-auto lg:justify-end">
+                <div class="text-sm lg:flex-grow">
+                    <a href="#inscripciones" class="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-gray-200 mr-8">Inscripciones</a>
+                    <a href="#acerca-de" class="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-gray-200 mr-8">Acerca de</a>
+                    <a href="#contacto" class="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-gray-200">Contacto</a>
+                </div>
+            </div>
+
+            <!-- Botón del menú para dispositivos móviles -->
+            <div class="lg:hidden">
+                <button id="menu-toggle" class="flex items-center px-3 py-2 border rounded text-white border-white hover:text-white hover:border-white">
+                    <svg class="fill-current h-4 w-4" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
+                </button>
+            </div>
+        </div>
+
+        <!-- Menú desplegable para dispositivos móviles -->
+        <div class="lg:hidden" id="menu" style="display: none;">
+            <div class="px-2 pt-2 pb-3">
+                <a href="#inscripciones" class="block mt-1 px-2 py-1 text-white font-semibold rounded hover:bg-gray-700">Inscripciones</a>
+                <a href="#acerca-de" class="block mt-1 px-2 py-1 text-white font-semibold rounded hover:bg-gray-700">Acerca de</a>
+                <a href="#contacto" class="block mt-1 px-2 py-1 text-white font-semibold rounded hover:bg-gray-700">Contacto</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contenido Principal -->
+    <div class="container mx-auto px-4 md:px-0 py-8">
+       
+        <!-- Acerca de -->
+        <section id="acerca-de" class="mb-8">
+            <h2 class="text-2xl font-bold mb-4">Acerca de</h2>
+            <p class="mb-4">Nuestra escuela de voleibol se dedica a promover el deporte y la formación integral de nuestros estudiantes.</p>
+            <p class="mb-4">Ofrecemos:</p>
+            <ul class="mb-4 list-disc pl-6">
+                <li>Entrenamientos de calidad con instructores certificados.</li>
+                <li>Competencias locales e internacionales.</li>
+                <li>Programas de desarrollo físico y mental.</li>
+            </ul>
+            <p class="mb-4">Nos enorgullece brindar una experiencia educativa y deportiva excepcional a nuestros jugadores.</p>
+            <!-- Tarjetas de imágenes -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                <div class="card p-4">
+                    <img src="img1.png" alt="Voleibol 13" class="w-full h-auto">
+                    <p class="mt-2">Participa en nuestros TORNEOS</p>
+                </div>
+                <div class="card p-4">
+                    <img src="img2.jpg" alt="Voleibol 14" class="w-full h-auto">
+                </div>
+                <div class="card p-4">
+                    <img src="img3.jpg" alt="Voleibol 15" class="w-full h-auto">
+                </div>
+                <div class="card p-4">
+                    <img src="img4.jpg" alt="Voleibol 15" class="w-full h-auto">
+                </div>
+                <div class="card p-4">
+                    <img src="img5.jpg" alt="Voleibol 15" class="w-full h-auto">
+                    <p> PARTICIPA DE NUESTRO DIVERTIDOS ENTRENAMIENTOS DONDE TUS DESTREZAS Y HABILIDADES SON 
+                        LLEVADAS A LA MEJORA CONTINUA.ñ
+                    </p>
+                </div>
+                <div class="card p-4">
+                    <img src="img6.jpg" alt="Voleibol 15" class="w-full h-auto">
+                   
+                </div>
+            </div>
+        </section>
+
+        <!-- Inscripciones -->
+        <section id="inscripciones" class="mb-8">
+            <h2 class="text-2xl font-bold mb-4">Inscripciones</h2>
+            <p class="mb-4">¡Bienvenido a nuestras inscripciones para la escuela de voleibol!</p>
+            <p class="mb-4">Para inscribirte, sigue estos simples pasos:</p>
+            <ol class="mb-4 list-decimal pl-6">
+                <li>Completa el formulario de inscripción en línea.</li>
+                <li>Realiza el pago de la cuota de inscripción.</li>
+                <li>Confirma tu inscripción y recibe la confirmación por correo electrónico.</li>
+            </ol>
+            <p class="mb-4">Si tienes alguna pregunta, no dudes en contactarnos a través de nuestro formulario de contacto o por teléfono.</p>
+            <!-- Tarjetas de imágenes -->
+            
+        </section>
+
+        <!-- Contacto -->
+        <section id="contacto">
+            <h2 class="text-2xl font-bold mb-4">Contacto</h2>
+            <p class="mb-4">Para más información sobre nuestra escuela de voleibol, no dudes en contactarnos.</p>
+            <p class="mb-4">Puedes comunicarte con nosotros de las siguientes maneras:</p>
+            <ul class="mb-4 list-disc pl-6">
+                <li>Correo electrónico: info@escuelavoleibol.com</li>
+                <li>Teléfono: +123456789</li>
+                <li>Visítanos en nuestra sede: Dirección de la sede, Ciudad, País</li>
+            </ul>
+            <!-- Formulario de contacto (opcional) -->
+            <form action="#" method="POST" class="mb-4">
+                <label for="nombre" class="block mb-2">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" class="w-full px-3 py-2 rounded border border-gray-300 focus:outline-none focus:border-blue-500">
+
+                <label for="email" class="block mt-4 mb-2">Correo electrónico:</label>
+                <input type="email" id="email" name="email" placeholder="correo@ejemplo.com" class="w-full px-3 py-2 rounded border border-gray-300 focus:outline-none focus:border-blue-500">
+
+                <label for="mensaje" class="block mt-4 mb-2">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" rows="4" placeholder="Escribe tu mensaje aquí" class="w-full px-3 py-2 rounded border border-gray-300 focus:outline-none focus:border-blue-500"></textarea>
+
+                <button type="submit" class="mt-4 bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">Enviar Mensaje</button>
+            </form>
+        </section>
+    </div>
+
+    <script>
+        // Toggle para el menú desplegable en dispositivos móviles
+        document.getElementById('menu-toggle').addEventListener('click', function() {
+            var menu = document.getElementById('menu');
+            menu.style.display = menu.style.display === 'none' ? 'block' : 'none';
+        });
+    </script>
+</body>
+</html>
